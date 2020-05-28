@@ -15,7 +15,7 @@ pipeline
 	 {
 	   steps 
 	   {
-	      bat "docker-compose up testng.xml testng1.xml"
+	      bat "docker-compose up search-module find-module"
 	   }
 	 }
 	 stage("Bring Grid Down")
