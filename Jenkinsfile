@@ -8,14 +8,14 @@ pipeline
 	   steps
 	   {
 	     bat "docker-compose up -d hub chrome"
-	     bat "docker-compose up -d --scale chrome=5"
+	     
 	   }
 	 }
      stage("Run Test")
 	 {
 	   steps 
 	   {
-	      bat "docker-compose up search-module find-module"
+	      bat "docker-compose up -d --scale chrome=5"
 	   }
 	 }
 	 stage("Bring Grid Down")
