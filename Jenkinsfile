@@ -15,7 +15,7 @@ pipeline
 	 {
 	   steps 
 	   {
-	      bat "docker-compose up -d --scale chrome=5"
+	     bat "docker-compose up --scale chrome=5"
 	   }
 	 }
 	 stage("Bring Grid Down")
