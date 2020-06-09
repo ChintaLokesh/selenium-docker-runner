@@ -27,8 +27,8 @@ services:
       - HUB_HOST=192.168.1.4
       - MODULE=testng.xml
     volumes:
-      - ./output:/usr/lokesh/Reports
-      - ./output:/usr/lokesh/Screenshots
+      - C:\Users\lokeshc2\Jenkins\workspace\SELENIUM_DOCKER_RUNNER:/usr/lokesh/Reports
+      - C:\Users\lokeshc2\Jenkins\workspace\SELENIUM_DOCKER_RUNNER:/usr/lokesh/Screenshots
   find-module:
     image: chintalokesh/seleniumdocker
     depends_on:
@@ -38,5 +38,5 @@ services:
       - HUB_HOST=192.168.1.4
       - MODULE=testng1.xml
     volumes:
-      - ./output1:/usr/lokesh/Reports
-      - ./output1:/usr/lokesh/Screenshots  
+      - C:\Users\lokeshc2\Jenkins\workspace\SELENIUM_DOCKER_RUNNER:/usr/lokesh/Reports
+      - C:\Users\lokeshc2\Jenkins\workspace\SELENIUM_DOCKER_RUNNER:/usr/lokesh/Screenshots  
