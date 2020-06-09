@@ -18,13 +18,13 @@ pipeline
 	     bat "docker-compose up search-module find-module"
 	   }
 	 }
-	 stage("Bring Grid Down")
-	 {
-	   steps
-	   {
-	     bat "docker-compose down"
-	   }
-	 }
-   }
-   
+	}
+	post
+	{
+	  always
+		{
+			archiveArtifacts artifacts : 'output/**' ,'output1/**'
+			bat "docker-compose down"
+		}	
+	}
 }
