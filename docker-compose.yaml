@@ -24,7 +24,7 @@ services:
       - firefox
     environment:
       - BROWSER=chrome
-      - HUB_HOST=192.168.0.102
+      - HUB_HOST=192.168.1.4
       - MODULE=testng.xml
     volumes:
       - ./output:/usr/lokesh/Reports
@@ -35,7 +35,7 @@ services:
       - chrome 
     environment:
       - BROWSER=chrome  
-      - HUB_HOST=192.168.0.102
+      - HUB_HOST=192.168.1.4
       - MODULE=testng1.xml
     volumes:
       - ./output1:/usr/lokesh/Reports
