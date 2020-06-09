@@ -8,7 +8,7 @@ pipeline
 	   steps
 	   {
 	     bat "docker-compose up -d hub chrome"
-	     bat "docker-compose scale chrome=5"
+	     bat "docker-compose --scale chrome=5"
 	   }
 	 }
      stage("Run Test")
