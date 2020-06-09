@@ -15,7 +15,7 @@ pipeline
 	 {
 	   steps 
 	   {
-	     bat "docker-compose start search-module find-module"
+	     bat "docker-compose up search-module find-module"
 	   }
 	 }
 	 stage("Bring Grid Down")
