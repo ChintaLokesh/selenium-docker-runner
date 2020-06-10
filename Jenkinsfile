@@ -3,6 +3,13 @@ pipeline
    agent any 
    stages
    {
+     stage("pull the latest Image")
+	   {
+            steps
+		   {
+			   bat "docker pull chintalokesh/seleniumdocker"
+		   }   
+	   }
      stage("Start the Grid")
 	 {
 	   steps
